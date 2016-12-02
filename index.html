@@ -1,84 +1,63 @@
 <!DOCTYPE html>
-<html>
-<head>    
-    <title>Sara</title>
-    <link rel="stylesheet" type="text/css" href="labb3.css">
-     <script src="labb3.js"></script> 
-
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draw on canvas</title>
+    <link rel="stylesheet" href="canvas.css">
+	 
+</head>
 
 <body>
-    
-<!--Drop down menu-->
-    
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Menu</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">Triangle</a>
-    <a href="#">Circle</a>
-    <a href="#">Rectangle</a>
-    <a href="#">Polygon</a>
-  </div>
-</div>
-    
-    
-    
-    <canvas id="canvas" width="300px" height="350px">Canvas not available, try another browser.</canvas>
-    
-    <div id="buttons">  
-        <button>Clear canvas</button>
-        <button>Cancel drawing</button>
-        <button>Export drawing to JSON</button>
-        <button>Import JSON</button>
-
+   <div>
+    <button id ="meny">MENY</button>
     </div>
     
-<select>
-  <option value="" selected disabled>Select color</option>
-  <option value="red">Red</option>
-  <option value="blue">Blue</option>
-  <option value="green">Green</option>
-</select>
-    
-    
-<input type = "text" placeholder="Own color"/>
-
+  <div id="dropdown">
+      <a href="#" id="dc">Draw circle</a>
+      <a href="#" id="dt">Draw triangle</a>
+      <a href="#" id="dr">Draw rectangle</a>
+  </div>
    
-    
+   <div class ="top">
+     
 
-    
-    
+      
+       <canvas id="canvas">Canvas not available, try another browser.</canvas>
+       
+       <div class="right-btns">
+           <button id="clear" class="btn-right">Clear canvas</button><br>
+           <button id="cancel" class="btn-right">Cancel drawing</button><br>
+           <button id="exportJSON" class="btn-right">Export to JSON</button><br>
+		   </div>
+	        <div id="jsonOutput">
+         <p id="jsonInfo"></p>
+     </div>
+       
+       
+	   
+	   
+<!--FÄRGVÄLJARE-->	   
+       <form class = "color-form">
+  <select name="colors" id="color">
+   <option value="#000000" selected="" disabled="">Select color:</option>
+    <option value="#0000ff" style="color: blue">Blue</option>
+    <option value="#33cc33" style="color: green">Green</option>
+    <option value="#ff0000" style="color: red">Red</option>
+    <option value="#ffcc00" style="color: #ffcc00">Yellow</option>
+  </select>
+  
+  
+  <input type="text" name ="input-color" id="input-color" placeholder="Add rgb or hex-color" style="font-family: monospace;">
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  <button id="add-color" class="add-color-btn" type="button" style="font-family: monospace;">Add color</button>
+  <p>Color picker:</p><input type = "color" name="colorClick"/>
+</form>
 
-    
+      
+           <p id="status" class="status">Welcome! This is your statusbar.</p>          
+     
+   </div></div>
+   <script src="canvas.js"></script>
+   
 </body>
 </html>

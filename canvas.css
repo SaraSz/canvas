@@ -1,0 +1,125 @@
+body{
+    margin: 40px;;
+    padding: 0 atuo;
+    background-color: lavender;
+	font-family: monospace;
+	text-align: center;
+}
+
+input[type=color]::-webkit-color-swatch 
+{ 
+    background-color: plum!important; 
+}
+
+#meny {
+    background-color: plum;
+	float: left;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+	margin-top: 20px;
+    margin-left: 40px;
+}
+
+#meny:hover {
+    background-color: palevioletred;
+}
+
+#dc, #dt, #dr {
+    display: block;
+    margin: 5px;
+    font-size: 15px;
+    text-decoration: none;
+	padding: 11px;
+    
+}
+#dropdown {
+    position: absolute;
+    width: 150px;
+    margin-left: 40px;
+	margin-top: 74px;
+    border-radius: 10px;
+    background: lightpink;
+    color: #FFF;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+
+#dropdown a:hover {
+    background-color: plum;
+    border-radius: 6px;
+}
+
+
+.top{ 
+	padding-top: 30px;
+    text-align: center;
+}
+#canvas{
+    background-color: white;
+    color: #000;
+    border: 3px solid purple;
+	border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+
+#status{
+
+    background-color: lavender;
+	border: 5px solid plum;
+	font-size: 15px;
+	border-radius: 10px;
+    color: #020104;
+    font-weight: bold;
+    display: block;
+	
+	
+}
+
+.right-btns{
+    margin-bottom: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.btn-right{
+    width:150px;
+    height: 80px;
+    color : white;
+	padding: 15px;
+	font-size: 16px;
+    background-color: plum;
+    margin-right: 2px;
+    font-weight: bold;
+    margin: 1px;
+    border-radius: 8px;
+	border: none;
+}
+
+.btn-right:hover {
+	background-color: palevioletred;
+}
+
+#jsonOutput {
+    background-color: palevioletred;
+    border-radius: 10px;
+    padding: 5px;
+    width: 500px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	
+}
+
+
+select {
+	font-family: monospace;
+   -webkit-appearance: normal;
+   -moz-appearance: none;
+   appearance: none;
+}
