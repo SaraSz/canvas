@@ -30,6 +30,22 @@ let jsonObj = [];
                 }
                 jsonInfo.innerHTML = "JSON: " + text;
             })
+			
+			
+//Kolla om färgen är ok
+let okColor;
+  inputColor.addEventListener('keyup', function (event) {
+            if (inputColor.value.match(hexColors) !== null) {
+                okColor = true;
+                status.innerHTML = "Valid color";
+                addColor.disabled = false;
+            }
+            else if (inputColor.value.match(hexColors) == null || inputColor.value == "") {
+                okColor = false;
+                status.innerHTML = "Invalid color! Try again.";
+                addColor.disabled = true;
+            }
+        })
 
 //Lägga till färger i listan
 addColor.addEventListener('click',function(event){
